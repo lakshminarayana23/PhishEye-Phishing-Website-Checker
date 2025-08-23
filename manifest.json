@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Checker",
+  "version": "1.2",
+  "description": "Automatically checks if a website is genuine or phishing site",
+  "permissions": ["tabs", "activeTab", "scripting","storage"],
+  "host_permissions": ["https://link-checker.nordvpn.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/peye-16.svg",
+      "48": "icons/peye-48.svg",
+      "128": "icons/peye-128.svg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

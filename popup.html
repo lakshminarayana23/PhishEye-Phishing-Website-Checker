@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Checker</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background: #f4f6f9;
+      width: 380px;
+      min-height: 260px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0 0 16px;
+      text-align: center;
+      color: #222;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input {
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #0078d7;
+      color: #fff;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+
+    .result-card {
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .safe {
+      background: #e9f9ef;
+      color: #1b8a4a;
+      border: 2px solid #b6e2c7;
+    }
+
+    .phishing {
+      background: #ffe9e9;
+      color: #c62828;
+      border: 2px solid #f5b5b5;
+    }
+
+    .unknown {
+      background: #fff6e5;
+      color: #a15c00;
+      border: 2px solid #ffd699;
+    }
+
+    .error {
+      background: #f4f4f4;
+      color: #555;
+      border: 2px solid #ddd;
+    }
+
+    .url {
+      font-size: 13px;
+      color: #333;
+      word-break: break-all;
+      margin-top: 8px;
+    }
+
+    .banner {
+      padding: 12px;
+      margin-bottom: 12px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .banner-danger {
+      background: #ff5252;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Phishing Checker</h1>
+
+  <input type="text" id="manualUrl" placeholder="Enter URL manually..." />
+  <button id="checkManual">Check Entered URL</button>
+
+  <div id="banner"></div>
+  <div id="result" class="result-card error">Waiting for site check...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

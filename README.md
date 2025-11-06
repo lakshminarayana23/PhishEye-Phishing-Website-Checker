@@ -1,4 +1,4 @@
-# 🔎 Phishing Website Checker - Chrome Extension
+# 🔎 Phishing Website Checker - Browser Extension
 
 A lightweight Chrome extension that automatically checks whether the website you are visiting is **Safe** or **Phishing/Malicious**.
 It runs seamlessly in the background and updates results every time you open or switch a website.
